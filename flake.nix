@@ -107,8 +107,6 @@
             user = "cloudgenius";
           };
 
-				  system.stateVersion = "24.11"; # Did you read the comment?
-
           # Define a user account. Don't forget to set a password with ‘passwd’.
           users.users.cloudgenius = {
           	isNormalUser = true;
@@ -127,6 +125,8 @@
             btop
             wget
           ];
+
+          system.stateVersion = "24.11"; # Did you read the comment?
         })
       ];
     };
